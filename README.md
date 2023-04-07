@@ -1,15 +1,23 @@
-# ML-Language-detection
-
----
+# Language detection
 
 AI app which determines the language of a text out of 3 given 'alien' languages - Kaggle competition
 
+### Table of contents:
+[I. Introduction](#1)
+[II. Data retrieval](#2)
+[III. Initial data standardization](#3)
+[IV. Choosing models for training](#4)
+[V. Optimization of data processing](#5)
+[VI. Conclusions](#6)
+
+<a name="1"/>
 ### I. Introduction
 
 ---
 
 This project is in the form of a Python program, developed within Jetbrains' IDE, Pycharm, and uses principles of self-learning taught in the Artificial Intelligence course. The purpose of this implementation is to be able to process files containing sentences written in three alien languages, with the help of machine learning algorithms, so that the language used can be predicted for any sentence.
 
+<a name="2"/>
 ### II. Data retrieval
 
 ---
@@ -26,6 +34,7 @@ The input data does not have a uniform structure within the input files (they co
 
 The output files are the CSV file (**RESULT.csv**) with the predictions based on the test data and the text files I use to log the data during the tests with the training models.
 
+<a name="3"/>
 ### III. Initial data standardization
 
 ---
@@ -34,6 +43,7 @@ Starting from the read data set, an initial standardization of it is performed u
 
 Thus, based on the initial sentences, a vocabulary will be built that will be used to create characteristic vectors for each of the initial statements (the appearance of each word in the vocabulary is counted). Later, they will be included in a new matrix, equivalent to the original text, but based on which statistical operations can be performed: normalizations, averages, standard deviations, necessary for making predictions.
 
+<a name="4"/>
 ### IV. Choosing models for training
 
 ---
@@ -54,6 +64,7 @@ The results were as follows:
 
 It can be seen that the training models with Naive Bayes (Multinomial and Complement) and the one with neural networks (MLPClassifier) ​​managed to obtain the best scores in the case of an input with a data standardization with default settings. These will be used further in the project.
 
+<a name="5"/>
 ### V. Optimization of data processing
 
 ---
@@ -114,6 +125,7 @@ Accuracy score and confusion matrix for the ComplementNB, representing the best 
   <img src="img/img8.png">
 </p>
  
+<a name="6"/>
 #### VI. Conclusions
 
 ---
