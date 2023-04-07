@@ -5,10 +5,15 @@ AI app which determines the language of a text out of 3 given 'alien' languages 
 ### Table of contents:
 
 I. [Introduction](#1)
+
 II. [Data retrieval](#2)
+
 III. [Initial data standardization](#3)
+
 IV. [Choosing models for training](#4)
+
 V. [Optimization of data processing](#5)
+
 VI. [Conclusions](#6)
 
 <a name="1"/>
