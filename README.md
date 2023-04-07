@@ -98,10 +98,16 @@ Using `analyzer: 'char_wb'` and `strip_accents: 'unicode'` together leads to an 
 Using TFIDF ('Term Frequency – Inverse Document Frequency') data formatting did not improve the score. This consisted of calculating a score for each word where overall frequency was correlated with absolute frequency across all texts.
 
 <p align="center">
+  <img src="img/img6.png">
+</p>
+
+Accuracy score and confusion matrix for the MultinomialNB case with `CountVectorizer(ngram_range=(1, 5), max_df=0.2, analyzer='char_wb', strip_accents='unicode')`
+
+<p align="center">
   <img src="img/img7.png">
 </p>
 
-Accuracy score and confusion matrix for the MultinomialNB, representing the best case obtained by me in this project:
+Accuracy score and confusion matrix for the ComplementNB, representing the best case obtained by me in this project:
 `CountVectorizer(ngram_range=(1, 5), max_df=0.7, analyzer='char_wb', strip_accents='unicode')` 
 
 <p align="center">
