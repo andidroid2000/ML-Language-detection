@@ -49,7 +49,7 @@ To determine the model that lends itself best to the problem of identifying the 
 The results were as follows:
 
 <p align="center">
-  <img src="../img/img1.png">
+  <img src="img/img1.png">
 </p>
 
 It can be seen that the training models with Naive Bayes (Multinomial and Complement) and the one with neural networks (MLPClassifier) ​​managed to obtain the best scores in the case of an input with a data standardization with default settings. These will be used further in the project.
@@ -78,24 +78,35 @@ Following the optimization tests, the results were similar between the two model
 
 The values for `ngram_range` and `max_df` fluctuate in performance from model to model. Thus, CNB has an increase in score as soon as the ngram horizon increases, while at MNB a stabilization can be observed over time.
 
-INSERT IMAGE
+<p align="center">
+  <img src="img/img2.png">
+</p>
 
 Regarding the score increase following the change of the df_max value (to `ngram_range(1,5)` for both models), the results can be seen below.
 
-INSERT IMAGE
+<p align="center">
+  <img src="img/img3.png">
+</p>
 
 Using `analyzer: 'char_wb'` and `strip_accents: 'unicode'` together leads to an increase in model performance, regardless of the type of model tested.
 
-INSERT IMAGE
+<p align="center">
+  <img src="img/img4.png">
+  <img src="img/img5.png">
+</p>
 
 Using TFIDF ('Term Frequency – Inverse Document Frequency') data formatting did not improve the score. This consisted of calculating a score for each word where overall frequency was correlated with absolute frequency across all texts.
 
-INSERT IMAGE
+<p align="center">
+  <img src="img/img7.png">
+</p>
 
 Accuracy score and confusion matrix for the MultinomialNB, representing the best case obtained by me in this project:
 `CountVectorizer(ngram_range=(1, 5), max_df=0.7, analyzer='char_wb', strip_accents='unicode')` 
- 
- INSERT IMAGE
+
+<p align="center">
+  <img src="img/img8.png">
+</p>
  
 #### VI. Conclusions
 
