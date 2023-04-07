@@ -1,7 +1,6 @@
 # ML-Language-detection
 
 ---
----
 
 AI app which determines the language of a text out of 3 given 'alien' languages - Kaggle competition
 
@@ -49,7 +48,9 @@ To determine the model that lends itself best to the problem of identifying the 
 
 The results were as follows:
 
-INSERT IMAGE
+<p align="center">
+  <img src="../img/img1.png">
+</p>
 
 It can be seen that the training models with Naive Bayes (Multinomial and Complement) and the one with neural networks (MLPClassifier) ​​managed to obtain the best scores in the case of an input with a data standardization with default settings. These will be used further in the project.
 
